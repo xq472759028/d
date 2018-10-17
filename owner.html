@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>业主日记</title>
+    <link rel="stylesheet" href="css/owner.css">
+    <link rel="stylesheet" href="css/public.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<!--头部城市切换、意见反馈、咨询热线-->
+<div class="qzlead-top">
+    <div class="qzlead-top-center">
+        <div class="qzlead-area">
+            <i class="iconfont icon-zuobiao"></i>
+            <p>北京</p>
+            <span>[切换]</span>
+            <!--定位所有的城市开始-->
+            <div class="qzlead-town">
+                <ul class="qzlead-town-title">
+                    <li class="qzlead-line">热门城市</li>
+                    <li>ABCD</li>
+                    <li>FGHJ</li>
+                    <li>KLMN</li>
+                    <li>MNOP</li>
+                    <li>QSTW</li>
+                    <li>XYZ</li>
+                </ul>
+                <div class="qzlead-town-list">
+                    <div class="qzlead-town-item">
+                        <ul class="qzlead-hot">
+                            <li><a href="javascript:;">北京市</a></li>
+                            <li><a href="javascript:;">上海市</a></li>
+                            <li><a href="javascript:;">广州市</a></li>
+                            <li><a href="javascript:;">深圳市</a></li>
+                            <li><a href="javascript:;">成都市</a></li>
+                            <li><a href="javascript:;">重庆市</a></li>
+                            <li><a href="javascript:;">武汉市</a></li>
+                            <li><a href="javascript:;">沈阳市</a></li>
+                            <li><a href="javascript:;">大连市</a></li>
+                            <li><a href="javascript:;">郑州市</a></li>
+                            <li><a href="javascript:;">西安市</a></li>
+                            <li><a href="javascript:;">南京市</a></li>
+                            <li><a href="javascript:;">苏州市</a></li>
+                            <li><a href="javascript:;">无锡市</a></li>
+                            <li><a href="javascript:;">徐州市</a></li>
+                            <li><a href="javascript:;">杭州市</a></li>
+                            <li><a href="javascript:;">宁波市</a></li>
+                            <li><a href="javascript:;">天津市</a></li>
+                            <li><a href="javascript:;">昆明市</a></li>
+                            <li><a href="javascript:;">南宁市</a></li>
+                            <li><a href="javascript:;">合肥市</a></li>
+                            <li><a href="javascript:;">长沙市</a></li>
+                            <li><a href="javascript:;">青岛市</a></li>
+                            <li><a href="javascript:;">哈尔滨市</a></li>
+                            <li><a href="javascript:;">兰州市</a></li>
+                            <li><a href="javascript:;">东莞市</a></li>
+                            <li><a href="javascript:;">惠州市</a></li>
+                            <li><a href="javascript:;">佛山市</a></li>
+                            <li><a href="javascript:;">贵阳市</a></li>
+                            <li><a href="javascript:;">泉州市</a></li>
+                        </ul>
+                    </div>
+                    <div class="qzlead-town-item" style="display: none">
+                        <ul class="qzlead-letter">
+                            <li>
+                                <p class="qzlead-upper">A</p>
+                                <p class="qzlead-urban">
+                                    <span>鞍山市</span>
+                                    <span>安庆市</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--定位所有的城市结束-->
+        </div>
+        <div class="qzlead-top-right">
+            <a href="javascript:;" class="qzlead-idea">意见反馈</a>
+            <p class="pppp">
+                <i class="iconfont icon-dianhua"></i>
+                <span>咨询热线：400-678-3928</span>
+                <i class="iconfont icon-arrowdown"></i>
+            </p>
+            <!--联系巧装家弹出框-->
+            <div class="qzlead-contact">
+                <p>联系巧装家管家</p>
+                <input type="text" placeholder="输入您的手机号，稍后将致电您">
+                <button type="submit">立即免费通话</button>
+                <span>巧装家承诺：不会收取任何通话费用</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--logo、首页、搜索-->
+<div class="qzlead-bottom">
+    <div class="qzlead-bottom-center">
+        <!--官网logo-->
+        <div class="qzlead-logo">
+            <img src="image/logo.png" alt="">
+        </div>
+        <!--搜索框-->
+        <div class="qzlead-search">
+            <input type="text" placeholder="搜装修公司/问题/攻略/效果图">
+            <i class="iconfont icon-ziyuan"></i>
+        </div>
+        <!--头部循环-->
+        <ul class="qzlead-list">
+            <li class="qzlead-list-li">
+                <a href="javascript:;">
+                    <span class="qzlead-list-span qzlead-list-a">首页</span>
+                </a>
+            </li>
+            <li class="qzlead-list-li">
+                <a href="">
+                    <span class="qzlead-list-span">效果图</span>
+                    <i class="icon-img"></i>
+                </a>
+                <!--效果图样式-->
+                <div class="qzlead-result">
+                    <ul class="qzlead-effect">
+                        <li>
+                            <p class="qzlead-effect-title">
+                                <a href="javascript:;">
+                                    <span>按风格</span>
+                                    <i class="iconfont icon-arrow-right"></i>
+                                </a>
+                            </p>
+                            <p class="qzlead-effect-word">
+                                <a href="javascript:;"><span>简约</span></a>
+                                <a href="javascript:;"><span>现代</span></a>
+                                <a href="javascript:;"><span>中式</span></a>
+                                <a href="javascript:;"><span>欧式</span></a>
+                                <a href="javascript:;"><span>美式</span></a>
+                                <a href="javascript:;"><span>田园</span></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="qzlead-effect-title">
+                                <a href="javascript:;">
+                                    <span>按户型</span>
+                                    <i class="iconfont icon-arrow-right"></i>
+                                </a>
+                            </p>
+                            <p class="qzlead-effect-word">
+                                <a href="javascript:;"><span>普通住宅</span></a>
+                                <a href="javascript:;"><span>小户型</span></a>
+                                <a href="javascript:;"><span>别墅</span></a>
+                                <a href="javascript:;"><span>局部装修</span></a>
+                                <a href="javascript:;"><span>KTV</span></a>
+                                <a href="javascript:;"><span>商铺</span></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="qzlead-effect-title">
+                                <a href="javascript:;">
+                                    <span>按空间</span>
+                                    <i class="iconfont icon-arrow-right"></i>
+                                </a>
+                            </p>
+                            <p class="qzlead-effect-word">
+                                <a href="javascript:;"><span>客厅</span></a>
+                                <a href="javascript:;"><span>卧室</span></a>
+                                <a href="javascript:;"><span>餐厅</span></a>
+                                <a href="javascript:;"><span>厨房</span></a>
+                                <a href="javascript:;"><span>卫生间</span></a>
+                                <a href="javascript:;"><span>阳台</span></a>
+                            </p>
+                        </li>
+                        <li class="qzlead-effect-li">
+                            <p class="qzlead-effect-disign">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-2"></i>
+                                    <span>免费设计</span>
+                                </a>
+                            </p>
+                            <p class="qzlead-effect-disign">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-dingzhi"></i>
+                                    <span>定制设计</span>
+                                </a>
+                            </p>
+                            <p class="qzlead-effect-disign">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-question-answer"></i>
+                                    <span>云设计</span>
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="qzlead-list-li">
+                <a href="">
+                    <span class="qzlead-list-span">装修攻略</span>
+                    <i class="icon-img"></i>
+                </a>
+                <!--装修攻略样式-->
+                <div class="qzlead-result">
+                    <ul class="qzlead-effect">
+                        <li>
+                            <p class="qzlead-effect-title">
+                                <a href="javascript:;">
+                                    <span>按服务区域</span>
+                                    <i class="iconfont icon-arrow-right"></i>
+                                </a>
+                            </p>
+                            <p class="qzlead-effect-word">
+                                <a href="javascript:;"><span>朝阳区</span></a>
+                                <a href="javascript:;"><span>大兴区</span></a>
+                                <a href="javascript:;"><span>东城区</span></a>
+                                <a href="javascript:;"><span>房山区</span></a>
+                                <a href="javascript:;"><span>丰台区</span></a>
+                                <a href="javascript:;"><span>海淀区</span></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="qzlead-effect-title">
+                                <a href="javascript:;">
+                                    <span>按价格</span>
+                                    <i class="iconfont icon-arrow-right"></i>
+                                </a>
+                            </p>
+                            <p class="qzlead-effect-word">
+                                <a href="javascript:;"><span>3万以下</span></a>
+                                <a href="javascript:;"><span>3-5万</span></a>
+                                <a href="javascript:;"><span>5-8万</span></a>
+                                <a href="javascript:;"><span>8-12万</span></a>
+                                <a href="javascript:;"><span>12-18万</span></a>
+                                <a href="javascript:;"><span>18-30万</span></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="qzlead-effect-title">
+                                <a href="javascript:;">
+                                    <span>按类型</span>
+                                    <i class="iconfont icon-arrow-right"></i>
+                                </a>
+                            </p>
+                            <p class="qzlead-effect-word">
+                                <a href="javascript:;"><span>普通住宅</span></a>
+                                <a href="javascript:;"><span>小户型</span></a>
+                                <a href="javascript:;"><span>别墅</span></a>
+                                <a href="javascript:;"><span>局部装修</span></a>
+                                <a href="javascript:;"><span>KTV</span></a>
+                                <a href="javascript:;"><span>商铺</span></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="qzlead-effect-title">
+                                <a href="javascript:;">
+                                    <span>按风格</span>
+                                    <i class="iconfont icon-arrow-right"></i>
+                                </a>
+                            </p>
+                            <p class="qzlead-effect-word">
+                                <a href="javascript:;"><span>简约</span></a>
+                                <a href="javascript:;"><span>现代</span></a>
+                                <a href="javascript:;"><span>中式</span></a>
+                                <a href="javascript:;"><span>欧式</span></a>
+                                <a href="javascript:;"><span>美式</span></a>
+                                <a href="javascript:;"><span>田园</span></a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="qzlead-list-li">
+                <a href="javascript:;">
+                    <span class="qzlead-list-span">服务保障</span>
+                </a>
+            </li>
+            <li class="qzlead-list-li">
+                <a href="javascript:;">
+                    <span class="qzlead-list-span">更多</span>
+                    <i class="icon-img"></i>
+                </a>
+                <!--更多-->
+                <div class="qzlead-result">
+                    <ul class="qzlead-effect">
+                        <li>
+                            <p class="qzlead-effect-title">
+                                <a href="javascript:;">
+                                    <span>装修流程</span>
+                                    <i class="iconfont icon-arrow-right"></i>
+                                </a>
+                            </p>
+                            <p class="qzlead-effect-word qzlead-effect-name">
+                                <a href="javascript:;"><span>准备工作</span></a>
+                                <a href="javascript:;"><span>设计方案</span></a>
+                                <a href="javascript:;"><span>装修公司</span></a>
+                                <a href="javascript:;"><span>材料选购</span></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="qzlead-effect-title">
+                                <a href="javascript:;">
+                                    <span>家居装修</span>
+                                    <i class="iconfont icon-arrow-right"></i>
+                                </a>
+                            </p>
+                            <p class="qzlead-effect-word">
+                                <a href="javascript:;"><span>客厅</span></a>
+                                <a href="javascript:;"><span>厨房</span></a>
+                                <a href="javascript:;"><span>卫生间</span></a>
+                                <a href="javascript:;"><span>餐厅</span></a>
+                                <a href="javascript:;"><span>阳台</span></a>
+                                <a href="javascript:;"><span>婚房</span></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="qzlead-effect-title">
+                                <a href="javascript:;">
+                                    <span>建材家居</span>
+                                    <i class="iconfont icon-arrow-right"></i>
+                                </a>
+                            </p>
+                            <p class="qzlead-effect-word qzlead-effect-name">
+                                <a href="javascript:;"><span>地板</span></a>
+                                <a href="javascript:;"><span>卫浴</span></a>
+                            </p>
+                        </li>
+                        <li class="qzlead-effect-li">
+                            <p class="qzlead-effect-disign">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-zhuangxiu"></i>
+                                    <span>三分钟学装修</span>
+                                </a>
+                            </p>
+                            <p class="qzlead-effect-disign">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-riji"></i>
+                                    <span>业主日记</span>
+                                </a>
+                            </p>
+                            <p class="qzlead-effect-disign">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-question-answer"></i>
+                                    <span>在线问答</span>
+                                </a>
+                            </p>
+                            <p class="qzlead-effect-disign">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-qinziluntan"></i>
+                                    <span>论坛交流</span>
+                                </a>
+                            </p>
+                            <p class="qzlead-effect-disign">
+                                <a href="javascript:;">
+                                    <i class="iconfont icon-fangwu"></i>
+                                    <span>业主案例</span>
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--头部结束-->
+<!--选择开始-->
+<div class="serch">
+    <div class="serch-center">
+        <!--左边内容-->
+        <div class="serch-left">
+            <!--找设计师开始-->
+            <div class="serch-content">
+                <p class="serch-title">
+                    <span>找 <em>巧装家</em>设计师 <i class="iconfont icon-fangxiangyou01"></i> </span>
+                    <span>共 <em>666</em>结果</span>
+                </p>
+                <ul class="serch-list">
+                    <li>
+                        <p>预算：</p>
+                        <div class="serch-item">
+                            <a href="" class="serch-limit">不限</a>
+                            <a href="">5万以下</a>
+                            <a href="">5-10万</a>
+                            <a href="">10-15万</a>
+                            <a href="">15-20万</a>
+                            <a href="">20万以上</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p>面积：</p>
+                        <div class="serch-item">
+                            <a href="" class="serch-limit">不限</a>
+                            <a href="">60m²以下</a>
+                            <a href="">60-90m²</a>
+                            <a href="">90-120m²</a>
+                            <a href="">120-150m²</a>
+                            <a href="">150m²以上</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--找设计师结束-->
+            <!--日记列表开始-->
+            <div class="diary">
+                <!--头部-->
+                <div class="diary-list">
+                    <p class="diary-list-active">精华日记</p>
+                    <p>所有装修日记</p>
+                </div>
+                <!--列表-->
+                <div class="diary-all">
+                    <div class="diary-item">
+                        <a href="diary.html" class="diary-left">
+                            <img src="image/a1.png" alt="">
+                        </a>
+                        <div class="diary-right">
+                            <div class="diary-content">
+                                <div class="diary-onwer">
+                                    <img src="image/a1.png" alt="">
+                                </div>
+                                <a href="diary.html" class="diary-title">泾阳家园68平小户型翻新 4.18万打造现代简约风</a>
+                                <ul class="diary-type">
+                                    <li>业主：<span>李先生</span></li>
+                                    <li>户型：<span>一居室</span></li>
+                                    <li>面积：<span>68㎡</span></li>
+                                    <li>风格：<span>现代简约</span></li>
+                                </ul>
+                            </div>
+                            <p class="diary-word">
+                                业主李先生家住普陀区泾阳家园，68平小户型整体翻新装修，喜欢现代简约风格，7月份签约，目前已经全部装修完毕，整个施工过程比较顺利，装修没遇到什么大的问题。就让我们一起来回顾下李先生的装修经历吧！
+                            </p>
+                            <ul class="diary-end">
+                                <li>预算<span>4.18</span>万</li>
+                                <li><span>已竣工</span></li>
+                                <li>最近更新<span>2018.10.8</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="diary-item">
+                        <a href="diary.html" class="diary-left">
+                            <img src="image/a1.png" alt="">
+                        </a>
+                        <div class="diary-right">
+                            <div class="diary-content">
+                                <div class="diary-onwer">
+                                    <img src="image/a1.png" alt="">
+                                </div>
+                                <a href="diary.html" class="diary-title">泾阳家园68平小户型翻新 4.18万打造现代简约风</a>
+                                <ul class="diary-type">
+                                    <li>业主：<span>李先生</span></li>
+                                    <li>户型：<span>一居室</span></li>
+                                    <li>面积：<span>68㎡</span></li>
+                                    <li>风格：<span>现代简约</span></li>
+                                </ul>
+                            </div>
+                            <p class="diary-word">
+                                业主李先生家住普陀区泾阳家园，68平小户型整体翻新装修，喜欢现代简约风格，7月份签约，目前已经全部装修完毕，整个施工过程比较顺利，装修没遇到什么大的问题。就让我们一起来回顾下李先生的装修经历吧！
+                            </p>
+                            <ul class="diary-end">
+                                <li>预算<span>4.18</span>万</li>
+                                <li><span>已竣工</span></li>
+                                <li>最近更新<span>2018.10.8</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="diary-item">
+                        <a href="diary.html" class="diary-left">
+                            <img src="image/a1.png" alt="">
+                        </a>
+                        <div class="diary-right">
+                            <div class="diary-content">
+                                <div class="diary-onwer">
+                                    <img src="image/a1.png" alt="">
+                                </div>
+                                <a href="diary.html" class="diary-title">泾阳家园68平小户型翻新 4.18万打造现代简约风</a>
+                                <ul class="diary-type">
+                                    <li>业主：<span>李先生</span></li>
+                                    <li>户型：<span>一居室</span></li>
+                                    <li>面积：<span>68㎡</span></li>
+                                    <li>风格：<span>现代简约</span></li>
+                                </ul>
+                            </div>
+                            <p class="diary-word">
+                                业主李先生家住普陀区泾阳家园，68平小户型整体翻新装修，喜欢现代简约风格，7月份签约，目前已经全部装修完毕，整个施工过程比较顺利，装修没遇到什么大的问题。就让我们一起来回顾下李先生的装修经历吧！
+                            </p>
+                            <ul class="diary-end">
+                                <li>预算<span>4.18</span>万</li>
+                                <li><span>已竣工</span></li>
+                                <li>最近更新<span>2018.10.8</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="diary-item">
+                        <a href="diary.html" class="diary-left">
+                            <img src="image/a1.png" alt="">
+                        </a>
+                        <div class="diary-right">
+                            <div class="diary-content">
+                                <div class="diary-onwer">
+                                    <img src="image/a1.png" alt="">
+                                </div>
+                                <a href="diary.html" class="diary-title">泾阳家园68平小户型翻新 4.18万打造现代简约风</a>
+                                <ul class="diary-type">
+                                    <li>业主：<span>李先生</span></li>
+                                    <li>户型：<span>一居室</span></li>
+                                    <li>面积：<span>68㎡</span></li>
+                                    <li>风格：<span>现代简约</span></li>
+                                </ul>
+                            </div>
+                            <p class="diary-word">
+                                业主李先生家住普陀区泾阳家园，68平小户型整体翻新装修，喜欢现代简约风格，7月份签约，目前已经全部装修完毕，整个施工过程比较顺利，装修没遇到什么大的问题。就让我们一起来回顾下李先生的装修经历吧！
+                            </p>
+                            <ul class="diary-end">
+                                <li>预算<span>4.18</span>万</li>
+                                <li><span>已竣工</span></li>
+                                <li>最近更新<span>2018.10.8</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--日记列表结束-->
+        </div>
+        <!--右边内容-->
+        <div class="serch-right">
+            <!--信息表单-->
+            <div class="serch-form">
+                <p class="serch-safe">
+                    <span class="serch-safe-title">你装修我保障</span>
+                    <span class="serch-safe-word">申请装修 <i>立省30%</i></span>
+                </p>
+                <div class="serch-input">
+                    <input type="text" placeholder="您的称呼">
+                    <input type="text" placeholder="手机号码">
+                </div>
+                <p class="serch-have">
+                    <span>已有 <i>22812123</i>位业主享受服务</span>
+                    <label for="">
+                        <input type="checkbox">风水服务
+                    </label>
+                </p>
+                <button type="submit" class="serch-button">立即免费申请</button>
+                <div class="serch-free">
+                    <ul class="serch-offer">
+                        <li>
+                            <a href="">
+                                <i class="serch-offer-img1"></i>
+                                免费报价
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="serch-offer-img2"></i>
+                                免费设计
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="serch-offer-img3"></i>
+                                免费量房
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="serch-offer-img4"></i>
+                                多套方案
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="serch-offer-img5"></i>
+                                免费验房
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="serch-offer-img6"></i>
+                                现金保障
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--日记排行-->
+            <div class="live">
+                <p class="live-title">资讯TOP10</p>
+                <ul class="live-item">
+                    <li>
+                        <a href="">
+                            <p class="live-num">1</p>
+                            <span>日式北欧多功能魔法 85后小夫妻装修故事</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="live-num">2</p>
+                            <span>70㎡小房摇身变“别墅”，这全靠设计！</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="live-num">3</p>
+                            <span>震惊！40㎡居然改成了简约风格两室一厅！</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>4</p>
+                            <span>家里的小角落原来可以这样设计！</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>5</p>
+                            <span>爱是一道光芒，看90后如何打造属于自己的北欧新房</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>6</p>
+                            <span>《秘密大改造》极致收官！57㎡惊变四居室一家五口各安所居！</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>7</p>
+                            <span>2018年装修流行趋势出炉 还没装的赶快来看看</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>8</p>
+                            <span>2018年装修流行趋势出炉 还没装的赶快来看看</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>9</p>
+                            <span>2018年装修流行趋势出炉 还没装的赶快来看看</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>10</p>
+                            <span>2018年装修流行趋势出炉 还没装的赶快来看看</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--选择结束-->
+</body>
+<script>
+
+    $(".serch-list-icon").on('click', function () {
+        $(this).toggleClass('serch-list-icondo');
+        $(this).prev().toggleClass("serch-itemdo");
+    })
+    $(".rank-title a").on("click", function () {
+        $(this).css("color", " rgb(230, 46, 53)").stop().find('i').addClass("rank-title-icon")
+        $(this).siblings().css("color", " #333").stop().find('i').removeClass('rank-title-icon')
+    })
+
+</script>
+<script>
+    //    页面滚动
+
+    $(function () {
+        var navH = $(".qzlead-bottom").offset().top;
+        $(window).scroll(function () {
+            var scroH = $(this).scrollTop();
+            if (scroH >= navH) {
+                $(".qzlead-bottom").addClass('qzlead-bottom-fixed');
+                $(".qzlead-top").css("display","none");
+                $("body,html").css("margin-top","90px");
+            } else if (scroH < navH) {
+                $(".qzlead-bottom").removeClass('qzlead-bottom-fixed');
+                $("body,html").css("margin-top","0px");
+                $(".qzlead-top").css("display","block");
+            }
+        })
+    });
+
+
+    //        热门城市
+    $('.qzlead-area').hover(function () {
+        $(this).addClass('qzlead-area-active');
+        $(".qzlead-town").show();
+        $(".qzlead-town").hover(function () {
+            $(this).show();
+        })
+    }, function () {
+        $(this).removeClass('qzlead-area-active');
+        $(".qzlead-town").hide()
+    });
+    //    联系方式效果
+    $('.pppp').hover(function () {
+        $(".qzlead-contact").slideDown();
+        $(".qzlead-contact").hover(function () {
+            $(this).show();
+        }, function () {
+            $(this).slideUp();
+        })
+    }, function () {
+        $(".qzlead-contact").hide()
+    });
+    // 头部效果开始
+    $(".qzlead-list-li").mouseenter(function () {
+        if ($(this).find('.qzlead-result')) {
+            $(this).find('.qzlead-result').show();
+            $(this).find('.icon-img').attr("class","icon-img");
+            $(this).find('.icon-img').attr("class","icon-img-top");
+            $(this).find('.qzlead-list-span').css("color", "green");
+            $('.qzlead-result').hover(function () {
+                $(this).show();
+            })
+        } else {
+            $(this).find('.qzlead-result').hide();
+            $(this).find('.icon-img-top').attr("class","icon-img-top");
+            $(this).find('.icon-img-top').attr("class","icon-img");
+            $(this).find('.qzlead-list-span').css("color", "#333");
+        }
+    });
+    $(".qzlead-list-li").mouseleave(function () {
+        $(this).find('.qzlead-result').hide();
+        $(this).find('.icon-img-top').attr("class","icon-img-top");
+        $(this).find('.icon-img-top').attr("class","icon-img");
+        $(this).find('.qzlead-list-span').css("color", "#333");
+    });
+
+    $(document).ready(function(){
+        $(".qzlead-list-li>a").each(function(){
+            $this = $(this);
+            if($this[0].href==String(window.location)){
+                $this.find('.qzlead-list-span').addClass('qzlead-list-a');
+                $this.find('.icon-img-top').css("opacity",0);
+                $this.parent().siblings().find('.qzlead-list-span').removeClass('qzlead-list-a');
+                $this.siblings().find('.icon-img').css("opacity",1);
+            }
+        });
+
+    });
+    //    $(".qzlead-list-li").on("click", function () {
+    //        $(this).children().first().find('span').addClass('qzlead-list-a');
+    //        $(this).children().first().find('.icon-img-top').css("opacity",0);
+    //        $(this).siblings().find('span').removeClass('qzlead-list-a');
+    //        $(this).siblings().find('.icon-img').css("opacity",1);
+    //    });
+    //    $(".qzlead-list-li").find('.qzlead-result').children().on("click", function () {
+    //        $(this).children().first().find('.icon-first').removeClass('icon-sanjiaoxing');
+    //        $(this).siblings().find('.icon-first').addClass('icon-sanjiaoxing');
+    //    });
+    //头部效果结束
+
+    // 数字跳动
+    function Num() {
+        document.querySelector(".qzoffer-cost-budget>span").innerHTML = Math.floor(Math.random() * (200000 - 10000) + 25);
+        document.querySelector(".qzoffer-cost-num1").innerHTML = Math.floor(Math.random() * (200000 - 10000) + 25);
+        document.querySelector(".qzoffer-cost-num2").innerHTML = Math.floor(Math.random() * (200000 - 10000) + 25);
+        document.querySelector(".qzoffer-cost-num3").innerHTML = Math.floor(Math.random() * (200000 - 10000) + 25);
+        document.querySelector(".qzoffer-cost-num4").innerHTML = Math.floor(Math.random() * (200000 - 10000) + 25);
+    }
+
+    setInterval(Num, 500);
+
+
+    // 装修计算器弹出下放
+    $(".qzoffer-top").on('click', function () {
+        $(this).parent().toggleClass("qzofferdo");
+        $(this).find('.qzoffer-image').toggleClass('qzoffer-image-down')
+    })
+
+</script>
+</html>
